@@ -1,0 +1,52 @@
+/* Download button style */
+#pixiv-downloader-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Prevent text selection */
+    user-select: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* For badge positioning */
+    position: fixed;
+    /* Use fixed to stay on screen even if scrolled, or absolute if inside container */
+    /* Let's stick to the previous layout logic. 
+       If we inject into body, Fixed is better to keep it visible. */
+    position: fixed;
+}
+
+#pixiv-downloader-btn:hover {
+    background-color: rgba(0, 150, 250, 0.8);
+    /* Blueish on hover */
+    transform: scale(1.1);
+}
+
+#pixiv-downloader-btn:active {
+    transform: scale(0.95);
+}
+
+#pixiv-downloader-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+    margin-bottom: 2px;
+    /* Slight offset for badge */
+}
+
+#page-count {
+    font-weight: bold;
+    text-shadow: 0 0 2px black;
+}
