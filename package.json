@@ -1,0 +1,34 @@
+{
+  "name": "pixivdownloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "coompile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minseo0388/pixivdownloader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minseo0388/pixivdownloader/issues"
+  },
+  "homepage": "https://github.com/minseo0388/pixivdownloader#readme",
+  "dependencies": {
+    "typescript": "^5.9.3",
+    "wxt": "^0.20.13"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.32"
+  }
+}

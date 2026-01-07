@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "noEmit": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "paths": {
+            "@": [
+                "."
+            ],
+            "@/*": [
+                "./*"
+            ],
+            "~": [
+                "."
+            ],
+            "~/*": [
+                "./*"
+            ],
+            "@@": [
+                "."
+            ],
+            "@@/*": [
+                "./*"
+            ],
+            "~~": [
+                "."
+            ],
+            "~~/*": [
+                "./*"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        ".wxt/wxt.d.ts",
+        ".wxt/types/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        ".output"
+    ]
+}

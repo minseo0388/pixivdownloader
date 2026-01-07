@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixiv Downloader Options</title>
     <style>
         body {
@@ -36,7 +37,6 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            /* Makes sure padding doesn't affect width */
             font-size: 14px;
         }
 
@@ -74,7 +74,6 @@
             padding: 10px;
             border-radius: 4px;
             display: none;
-            /* Hidden by default */
         }
 
         .success {
@@ -98,8 +97,7 @@
                 <li><code>{id}</code>: Image ID (e.g. 12345678)</li>
                 <li><code>{author}</code>: Author Name</li>
                 <li><code>{title}</code>: Image Title</li>
-                <li><code>{ext}</code>: File Extension (e.g. jpg, png) (Automatically handled, but you can use it if you
-                    want explicit control, though usually handled by logic)</li>
+                <li><code>{ext}</code>: File Extension (e.g. jpg, png)</li>
                 <li><code>{year}</code>, <code>{month}</code>, <code>{day}</code>: Date components</li>
             </ul>
             Use <code>/</code> to create subdirectories.
@@ -109,7 +107,7 @@
     <button id="save">Save Settings</button>
     <div id="status"></div>
 
-    <script src="options.js"></script>
+    <script type="module" src="./main.ts"></script>
 </body>
 
 </html>
